@@ -1,0 +1,110 @@
+#include<iostream>
+#include<ctime>
+using namespace std;
+
+
+
+void print(float*m, int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		cout << m[i] <<" ";
+	}
+	cout << endl;
+}
+void fill(float*m,int n)
+{
+	for (int i = 0; i < n;i++)
+	{
+		m[i] = (rand() & 100 - 50)/10;
+
+	}
+}
+void sort(float*m, int n)
+{
+	for (int i = 0; i < n;i++)
+	{
+		for (int i = 0; i < n-1;i++)
+		{
+			if (m[i] > m[i + 1])
+			{
+				swap(m[i], m[i + 1]);
+			}
+		}
+	}	
+}
+float max(float* m, int n)
+{
+	int max = m[0];
+	for (int i = 0; i < n; i++)
+	{
+		if (m[i] > max)
+		{
+			max = m[i];
+		}
+	}
+	return max;
+}
+
+
+void main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a;
+	int n;
+	cout << "введите длину массива" << endl;
+	cin >> n;
+	float* m = new float[n];
+	while (true)
+	{
+		cout << "что вы хотите сделать?" << endl;
+
+		cout << "1.Заполнить" << endl;
+		cout << "2.Вывести" << endl;
+		cout << "3. Отсортировать" << endl;
+		cout << "4.Вывести максимум" << endl;
+		cout << "5.Выход" << endl;
+		cin >> a;
+		switch (a)
+
+		{
+		case 1:
+		{
+
+			fill(m, n);
+			break;
+		}
+		case 2:
+		{
+			print(m, n);
+			break;
+		}
+		case 3:
+		{
+			sort(m, n);
+			break;
+		}
+		case 4:
+		{
+			cout <<"Максимум = "<< max(m, n) << endl;
+			break;
+		}
+		case 5:
+		{
+			cout << "Спасибо за внимание" << endl;
+			
+		}
+		default:
+		{
+			cout << "Ошибка" << endl;
+			
+		}
+		}
+		
+	}
+	
+	
+	
+	delete[] m;
+	system("pause");
+}

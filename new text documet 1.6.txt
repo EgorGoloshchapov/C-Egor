@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+	void main()
+{
+	setlocale(LC_ALL,"Rus");
+
+
+	float a=0,b=0;
+	float c=0;
+
+
+
+	
+	
+
+	cout<<" введите первое число "<<endl;
+	cin>>a;
+	cout<<" введите второе число "<<endl;
+	cin>>b;
+	cout<<" введите третье число "<<endl;
+	cin>>c;
+
+	(a + b)/c;
+
+		if (c>0)
+	{ 
+		cout<< (a + b)/c <<endl;
+
+	} 
+
+		if (c == 0)
+		{
+			cout<<" ошибка "<<endl;
+		}
+
+		if (c<0) 
+		{
+			cout<<" ошибка "<<endl;
+		}
+
+
+
+
+		system("pause");
+
+	}
+	

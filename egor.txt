@@ -1,0 +1,64 @@
+#include<iostream>
+
+using namespace std;
+
+void main()
+{
+	setlocale(LC_ALL,"Rus");
+
+	int p=1;
+	int n=0;
+
+	cout<<"введите количество перемноженных чисел"<<endl;
+	cin>>n;
+	int count = 0;
+
+	while(count < n)
+	{
+		count = count + 1;
+		cout<<count<<endl;
+
+		p=p*count;
+
+	}
+	cout<<"factorial = "<<p<<endl;
+	system("pause");
+
+
+}
+
+
+
+
+___________________________________________________________________________
+
+
+
+
+
+
+#include<iostream>
+
+using namespace std;
+
+void main()
+{
+	setlocale(LC_ALL, "Rus");
+
+	cout << "введите число" << endl;
+	int n = 0;
+	cin>>n;
+	int count = 0;
+	while (count < 9)
+	{
+		
+		count = count +1;
+
+		cout << count << "*" << n << "="<< count* n <<endl;
+	}
+
+		
+	
+
+	system("pause");
+}

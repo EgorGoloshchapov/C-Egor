@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+	void main()
+{
+	setlocale(LC_ALL,"Rus");
+
+
+	float a=0;
+	float b=0;
+	float c=0;
+
+
+
+	
+	
+
+	cout<<" введите первое число "<<endl;
+	cin>>a;
+	cout<<" введите второе число "<<endl;
+	cin>>b;
+	cout<<" введите третье число "<<endl;
+	cin>>c;
+	
+
+    if (c>=b)
+	{ 
+		if (b<=a)
+		{
+			if (c>=a)
+			{
+			
+				cout<<"большее = "<< c <<endl;
+
+			}
+		}
+	}
+
+
+		system("pause");
+
+	}
+	

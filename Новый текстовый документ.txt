@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+void main()
+{
+
+	setlocale(LC_ALL,"Rus");
+	cout<<" введите мес€ц"<<endl;
+
+	int month;
+	cin>>month;
+
+
+	
+	if(month > 2 && month < 6)
+	{
+		cout<<"весна"<<endl;   
+	}
+	if(month > 5 &&  month < 9)
+	{  
+	    cout<<"лето"<<endl;
+	}
+	if(month > 8 && month < 9) 
+	{
+		cout<<"осень"<<endl;	
+	}
+
+
+	if(month == 12 || month == 1 || month == 2)
+	{
+		cout<<"зима"<<endl;
+	}
+	
+
+	if (month > 12)
+	{
+    cout<<"ошибка"<<endl;
+	}
+
+	if (month < 1) 
+	{
+       cout<<"ошибка"<<endl;
+	}
+
+
+
+	system("pause");
+
+
+}

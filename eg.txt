@@ -1,0 +1,3 @@
+petya 20 
+leha 30 
+Vanya 38 

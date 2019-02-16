@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+	void main()
+{
+	setlocale(LC_ALL,"Rus");
+
+	int x;
+	int y;
+	int z;
+	int d;
+	cout<<"введите первое число"<<endl;
+	cin>>x;
+	cout<<"введите второе число"<<endl;
+	cin>>y;
+	cout<<"введите третье число"<<endl;
+	cin>>z;
+	d = (x+y) * z;
+
+	cout<<("x + y")<<" * "<<z<<" = "<<d<<endl;
+
+
+
+	system("pause");
+}
